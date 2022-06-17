@@ -15,11 +15,11 @@ function FiltersGroup({
     const filters = {
         price: {
             name: "price",
-            options: ["1.000.000", "2.000.000", "3.000.000", "4.000.000"],
+            options: ["1.000", "2.000", "3.000", "4.000"],
         },
         color: {
             name: "color",
-            options: ["black", "blue", "yellow"],
+            options: ["black", "blue", "yellow", "orange"],
         },
         size: {
             name: "size",

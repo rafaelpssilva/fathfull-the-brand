@@ -4,11 +4,11 @@ import FiltersGroup from "../outhers/FiltersGroup";
 import Category from "./Category";
 
 function Home() {
-    const [priceSelector, setPriceSelector] = React.useState("");
+    const [priceSelector, setPriceSelector] = React.useState("price");
     const [colorSelector, setColorSelector] = React.useState("color");
-    const [sizeSelector, setSizeSelector] = React.useState("");
-    const [genderSelector, setGenderSelector] = React.useState("");
-    const [seasonsSelector, setSeasonsSelector] = React.useState("");
+    const [sizeSelector, setSizeSelector] = React.useState("size");
+    const [genderSelector, setGenderSelector] = React.useState("gender");
+    const [seasonsSelector, setSeasonsSelector] = React.useState("seasons");
 
     return (
         <>
