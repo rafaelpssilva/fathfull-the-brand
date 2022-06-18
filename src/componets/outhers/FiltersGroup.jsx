@@ -19,7 +19,19 @@ function FiltersGroup({
         },
         color: {
             name: "color",
-            options: ["black", "blue", "yellow", "orange"],
+            options: [
+                "white",
+                "black",
+                "gray",
+                "brown",
+                "beige",
+                "jeans",
+                "red",
+                "green",
+                "blue",
+                "light blue",
+                "pink",
+            ],
         },
         size: {
             name: "size",
