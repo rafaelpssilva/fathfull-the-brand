@@ -27,49 +27,9 @@ function Products({
     seasonsSelector,
 }) {
     const products = [
-        // Oganização produtos: price color size gender seasons
-        // {
-        //     id: "1",
-        //     name: "Farrah bikini top",
-        //     price: "1.797.212",
-        //     img: Farrah,
-        //     alt: "biquini laranja e preto com formato de zebra",
-        //     color: "yellow",
-        //     caracteristicas:
-        //         "1.797 orange black small medium large woman summer price color size gender seasons",
-        // },
-        // {
-        //     id: "2",
-        //     name: "Josca one piece",
-        //     price: "3.310.713",
-        //     img: Josca,
-        //     alt: "biquini preto",
-        //     color: "black",
-        //     caracteristicas:
-        //         "3.310 black small medium large woman summer price color size gender seasons",
-        // },
-        // {
-        //     id: "3",
-        //     name: "Rossi bikini top",
-        //     price: "2.103.819",
-        //     img: Rossi,
-        //     alt: "biquini azul",
-        //     color: "blue",
-        //     caracteristicas:
-        //         "2.103 blue small medium large men summer price color size gender seasons",
-        // },
-        // {
-        //     id: "4",
-        //     name: "Solene one piece",
-        //     price: "3.107.411",
-        //     img: Solene,
-        //     alt: "biquini amarelo com listras brancas",
-        //     color: "yellow",
-        //     caracteristicas:
-        //         "3.310 yellow small medium large men summer price color size gender seasons",
-        // },
         {
             id: "1",
+            classification: "popular",
             name: "Vestido tubo simples",
             price: "1.797.212",
             img: VestidoSimplesTubo,
@@ -80,6 +40,7 @@ function Products({
         },
         {
             id: "2",
+            classification: "popular",
             name: "Vestido tubo cordão",
             price: "3.310.713",
             img: VestidoCordaoTubo,
@@ -90,6 +51,7 @@ function Products({
         },
         {
             id: "3",
+            classification: "popular",
             name: "Vestido preguado",
             price: "2.103.819",
             img: VestidoPreguado,
@@ -100,6 +62,7 @@ function Products({
         },
         {
             id: "4",
+            classification: "popular",
             name: "Vestido franzido",
             price: "3.107.411",
             img: VestidoFranzido,
@@ -110,6 +73,7 @@ function Products({
         },
         {
             id: "5",
+            classification: "popular",
             name: "Vestido ruched",
             price: "4.107.411",
             img: VestidoRuchedTubo,
@@ -120,6 +84,7 @@ function Products({
         },
         {
             id: "6",
+            classification: "popular",
             name: "Vestido canelado",
             price: "2.107.411",
             img: VestidoCanelado,
@@ -130,6 +95,7 @@ function Products({
         },
         {
             id: "7",
+            classification: "popular",
             name: "Jaqueta black",
             price: "2.107.411",
             img: JaquetaBlack,
@@ -140,6 +106,7 @@ function Products({
         },
         {
             id: "8",
+            classification: "popular",
             name: "jaqueta bomber",
             price: "2.107.411",
             img: JaquetaBomber,
@@ -150,6 +117,7 @@ function Products({
         },
         {
             id: "9",
+            classification: "popular",
             name: "Jaqueta bordado",
             price: "2.107.411",
             img: JaquetaBordado,
@@ -160,6 +128,7 @@ function Products({
         },
         {
             id: "10",
+            classification: "popular",
             name: "Jaqueta formal",
             price: "2.107.411",
             img: JaquetaFormal,
@@ -170,6 +139,7 @@ function Products({
         },
         {
             id: "11",
+            classification: "popular",
             name: "Cargo Nasa",
             price: "2.107.411",
             img: CalcaNasa,
@@ -180,6 +150,7 @@ function Products({
         },
         {
             id: "12",
+            classification: "popular",
             name: "Moletom Slogan",
             price: "2.107.411",
             img: CalcaTieDyeSlogan,
@@ -190,6 +161,7 @@ function Products({
         },
         {
             id: "13",
+            classification: "popular",
             name: "Moletom tie dye",
             price: "2.107.411",
             img: CalcaTieDye,
@@ -200,7 +172,11 @@ function Products({
         },
     ];
 
-    const productsReturn = products.map(
+    const fill = "popular";
+
+    const categoryProducts = products.filter((p) => p.classification === fill);
+
+    const productsReturn = categoryProducts.map(
         ({ id, name, price, img, alt, caracteristicas }) =>
             priceSelector === "price" &&
             colorSelector === "color" &&

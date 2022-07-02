@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ setNavFillter }) {
     const [pesquisa, setPesquisa] = React.useState("");
+
+    function handleClickNav(event) {
+        setNavFillter(event.target.innerHTML);
+    }
 
     function navigationProduct(event) {
         setPesquisa(event.target.value);
@@ -13,6 +17,15 @@ function Header() {
             setPesquisa("");
         }, 1000);
     }
+
+    const sections = [
+        "new arrials",
+        "acessories",
+        "dresses",
+        "tops",
+        "bottom",
+        "collections",
+    ];
 
     return (
         <header className="header">
@@ -101,12 +114,11 @@ function Header() {
                                 Popular
                             </Link>
                         </li>
-                        <li>New Arrials</li>
-                        <li>Acessories</li>
-                        <li>Dresses</li>
-                        <li>Tops</li>
-                        <li>Bottom</li>
-                        <li>Collections</li>
+                        {sections.map((section) => (
+                            <li key={section} onClick={handleClickNav}>
+                                {section}
+                            </li>
+                        ))}
                         <li>
                             <Link to="/sale" className="Link">
                                 Sale

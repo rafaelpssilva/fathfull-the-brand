@@ -9,12 +9,15 @@ import Cart from "./componets/layout/Cart";
 import Sale from "./componets/commerce/Sale";
 
 import "./global.css";
+import Teste5 from "./componets/Teste5";
 
 function App() {
+    const [navFillter, setNavFillter] = React.useState("");
+
     return (
         <div className="app">
             <Router>
-                <Header />
+                <Header navFillter={navFillter} setNavFillter={setNavFillter} />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route path="/cart" element={<Cart />} />
