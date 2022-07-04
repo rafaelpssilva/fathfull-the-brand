@@ -1,63 +1,34 @@
 import React from "react";
+import { GlobalContext } from "../../GlobalContext";
+import dataFilters from "../../data/dataFilters";
 
-function FiltersGroup({
-    priceSelector,
-    setPriceSelector,
-    colorSelector,
-    setColorSelector,
-    sizeSelector,
-    setSizeSelector,
-    genderSelector,
-    setGenderSelector,
-    seasonsSelector,
-    setSeasonsSelector,
-}) {
-    const filters = {
-        price: {
-            name: "price",
-            options: ["1.000", "2.000", "3.000", "4.000"],
-        },
-        color: {
-            name: "color",
-            options: [
-                "white",
-                "black",
-                "gray",
-                "brown",
-                "beige",
-                "jeans",
-                "red",
-                "green",
-                "blue",
-                "light blue",
-                "pink",
-            ],
-        },
-        size: {
-            name: "size",
-            options: ["p", "m", "g", "gg"],
-        },
-        gender: {
-            name: "gender",
-            options: ["woman", "men"],
-        },
-        seasons: {
-            name: "seasons",
-            options: ["winter", "summer"],
-        },
-    };
+function FiltersGroup() {
+    const {
+        priceSelector,
+        setPriceSelector,
+        colorSelector,
+        setColorSelector,
+        sizeSelector,
+        setSizeSelector,
+        genderSelector,
+        setGenderSelector,
+        seasonsSelector,
+        setSeasonsSelector,
+    } = React.useContext(GlobalContext);
 
     return (
         <div className="filters-group">
             <h3>Filters:</h3>
             <select
-                name={filters.price.name}
-                id={filters.price.name}
+                name={dataFilters.price.name}
+                id={dataFilters.price.name}
                 value={priceSelector}
                 onChange={({ target }) => setPriceSelector(target.value)}
             >
-                <option value={filters.price.name}>{filters.price.name}</option>
-                {filters.price.options.map((option) => (
+                <option value={dataFilters.price.name}>
+                    {dataFilters.price.name}
+                </option>
+                {dataFilters.price.options.map((option) => (
                     <option value={option} key={option}>
                         {option}
                     </option>
@@ -65,13 +36,15 @@ function FiltersGroup({
             </select>
 
             <select
-                name={filters.color.name}
-                id={filters.color.name}
+                name={dataFilters.color.name}
+                id={dataFilters.color.name}
                 value={colorSelector}
                 onChange={({ target }) => setColorSelector(target.value)}
             >
-                <option value={filters.color.name}>{filters.color.name}</option>
-                {filters.color.options.map((option) => (
+                <option value={dataFilters.color.name}>
+                    {dataFilters.color.name}
+                </option>
+                {dataFilters.color.options.map((option) => (
                     <option value={option} key={option}>
                         {option}
                     </option>
@@ -79,13 +52,15 @@ function FiltersGroup({
             </select>
 
             <select
-                name={filters.size.name}
-                id={filters.size.name}
+                name={dataFilters.size.name}
+                id={dataFilters.size.name}
                 value={sizeSelector}
                 onChange={({ target }) => setSizeSelector(target.value)}
             >
-                <option value={filters.size.name}>{filters.size.name}</option>
-                {filters.size.options.map((option) => (
+                <option value={dataFilters.size.name}>
+                    {dataFilters.size.name}
+                </option>
+                {dataFilters.size.options.map((option) => (
                     <option value={option} key={option}>
                         {option}
                     </option>
@@ -93,15 +68,15 @@ function FiltersGroup({
             </select>
 
             <select
-                name={filters.gender.name}
-                id={filters.gender.name}
+                name={dataFilters.gender.name}
+                id={dataFilters.gender.name}
                 value={genderSelector}
                 onChange={({ target }) => setGenderSelector(target.value)}
             >
-                <option value={filters.gender.name}>
-                    {filters.gender.name}
+                <option value={dataFilters.gender.name}>
+                    {dataFilters.gender.name}
                 </option>
-                {filters.gender.options.map((option) => (
+                {dataFilters.gender.options.map((option) => (
                     <option value={option} key={option}>
                         {option}
                     </option>
@@ -109,15 +84,15 @@ function FiltersGroup({
             </select>
 
             <select
-                name={filters.seasons.name}
-                id={filters.seasons.name}
+                name={dataFilters.seasons.name}
+                id={dataFilters.seasons.name}
                 value={seasonsSelector}
                 onChange={({ target }) => setSeasonsSelector(target.value)}
             >
-                <option value={filters.seasons.name}>
-                    {filters.seasons.name}
+                <option value={dataFilters.seasons.name}>
+                    {dataFilters.seasons.name}
                 </option>
-                {filters.seasons.options.map((option) => (
+                {dataFilters.seasons.options.map((option) => (
                     <option value={option} key={option}>
                         {option}
                     </option>

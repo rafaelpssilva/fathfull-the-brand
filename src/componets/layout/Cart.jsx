@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 function Cart({ preco }) {
     return (
         <section className="cart">

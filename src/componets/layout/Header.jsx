@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GlobalContext } from "../../GlobalContext";
 
-function Header({ setNavFillter }) {
+function Header() {
     const [pesquisa, setPesquisa] = React.useState("");
+    const { setNavFillter } = React.useContext(GlobalContext);
 
     function handleClickNav(event) {
         setNavFillter(event.target.innerHTML);
@@ -19,7 +21,7 @@ function Header({ setNavFillter }) {
     }
 
     const sections = [
-        "new arrials",
+        "new",
         "acessories",
         "dresses",
         "tops",
@@ -110,12 +112,20 @@ function Header({ setNavFillter }) {
                 <nav className="navigation-list ">
                     <ul className="wrapper-desktop">
                         <li>
-                            <Link to="/" className="Link">
-                                Popular
+                            <Link
+                                to="/"
+                                className="Link"
+                                onClick={handleClickNav}
+                            >
+                                popular
                             </Link>
                         </li>
                         {sections.map((section) => (
-                            <li key={section} onClick={handleClickNav}>
+                            <li
+                                style={{ cursor: "pointer" }}
+                                key={section}
+                                onClick={handleClickNav}
+                            >
                                 {section}
                             </li>
                         ))}

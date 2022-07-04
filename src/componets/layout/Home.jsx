@@ -3,6 +3,8 @@ import Products from "../commerce/Products";
 import FiltersGroup from "../outhers/FiltersGroup";
 import Category from "./Category";
 
+import { GlobalContext } from "../../GlobalContext";
+
 function Home() {
     const [priceSelector, setPriceSelector] = React.useState("price");
     const [colorSelector, setColorSelector] = React.useState("color");
@@ -40,13 +42,7 @@ function Home() {
                 </div>
             </section>
             <Category />
-            <Products
-                priceSelector={priceSelector}
-                colorSelector={colorSelector}
-                sizeSelector={sizeSelector}
-                genderSelector={genderSelector}
-                seasonsSelector={seasonsSelector}
-            />
+            <Products />
         </>
     );
 }
