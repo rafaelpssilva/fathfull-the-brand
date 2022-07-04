@@ -47,7 +47,7 @@ import MoletomMoonColors from "../assets/products-img/bottom/moletom-moon-colors
 const dataProducts = [
     {
         id: "1",
-        classification: "popular new",
+        classification: "all dress popular",
         name: "Vestido tubo simples",
         price: "1.797.212",
         img: VestidoSimplesTubo,
@@ -58,7 +58,7 @@ const dataProducts = [
     },
     {
         id: "2",
-        classification: "popular",
+        classification: "all dress new",
         name: "Vestido tubo cordão",
         price: "3.310.713",
         img: VestidoCordaoTubo,
@@ -69,7 +69,7 @@ const dataProducts = [
     },
     {
         id: "3",
-        classification: "popular",
+        classification: "all dress new",
         name: "Vestido preguado",
         price: "2.103.819",
         img: VestidoPreguado,
@@ -80,7 +80,7 @@ const dataProducts = [
     },
     {
         id: "4",
-        classification: "popular",
+        classification: "all dress",
         name: "Vestido franzido",
         price: "3.107.411",
         img: VestidoFranzido,
@@ -91,7 +91,7 @@ const dataProducts = [
     },
     {
         id: "5",
-        classification: "popular",
+        classification: "all dress popular new",
         name: "Vestido ruched",
         price: "4.107.411",
         img: VestidoRuchedTubo,
@@ -102,7 +102,7 @@ const dataProducts = [
     },
     {
         id: "6",
-        classification: "popular",
+        classification: "all dress",
         name: "Vestido canelado",
         price: "2.107.411",
         img: VestidoCanelado,
@@ -113,7 +113,7 @@ const dataProducts = [
     },
     {
         id: "7",
-        classification: "popular",
+        classification: "all tops popular",
         name: "Jaqueta black",
         price: "2.107.411",
         img: JaquetaBlack,
@@ -124,7 +124,7 @@ const dataProducts = [
     },
     {
         id: "8",
-        classification: "popular",
+        classification: "all tops new",
         name: "jaqueta bomber",
         price: "2.107.411",
         img: JaquetaBomber,
@@ -135,7 +135,7 @@ const dataProducts = [
     },
     {
         id: "9",
-        classification: "popular",
+        classification: "all tops popular",
         name: "Jaqueta bordado",
         price: "2.107.411",
         img: JaquetaBordado,
@@ -146,7 +146,7 @@ const dataProducts = [
     },
     {
         id: "10",
-        classification: "popular",
+        classification: "all tops new",
         name: "Jaqueta formal",
         price: "2.107.411",
         img: JaquetaFormal,
@@ -157,7 +157,7 @@ const dataProducts = [
     },
     {
         id: "11",
-        classification: "popular bottom",
+        classification: "all bottom popular new",
         name: "Cargo Nasa",
         price: "2.107.411",
         img: CalcaNasa,
@@ -168,7 +168,7 @@ const dataProducts = [
     },
     {
         id: "12",
-        classification: "popular bottom",
+        classification: "all bottom",
         name: "Moletom Slogan",
         price: "2.107.411",
         img: CalcaTieDyeSlogan,
@@ -179,7 +179,7 @@ const dataProducts = [
     },
     {
         id: "13",
-        classification: "popular bottom",
+        classification: "all bottom popular new",
         name: "Moletom tie dye",
         price: "2.107.411",
         img: CalcaTieDye,
@@ -193,7 +193,7 @@ const dataProducts = [
 
     {
         id: "14",
-        classification: "tops",
+        classification: "all tops popular new",
         name: "Top cordão tubo",
         price: "2.107.411",
         img: TopCordaoTubo,
@@ -204,7 +204,7 @@ const dataProducts = [
     },
     {
         id: "15",
-        classification: "tops",
+        classification: "all tops",
         name: "Top desenho aninado",
         price: "2.107.411",
         img: TopDesenhoAnimado,
@@ -215,7 +215,7 @@ const dataProducts = [
     },
     {
         id: "16",
-        classification: "tops",
+        classification: "all tops popular new",
         name: "Top malhado",
         price: "2.107.411",
         img: TopMalhado,
@@ -226,7 +226,7 @@ const dataProducts = [
     },
     {
         id: "17",
-        classification: "tops",
+        classification: "all tops new",
         name: "Top malha texturizada",
         price: "2.107.411",
         img: TopMalhaTexturizado,
@@ -237,7 +237,7 @@ const dataProducts = [
     },
     {
         id: "18",
-        classification: "tops",
+        classification: "all tops popular",
         name: "Top simples ocasional",
         price: "2.107.411",
         img: TopSimplesOcasional,
@@ -248,7 +248,7 @@ const dataProducts = [
     },
     {
         id: "19",
-        classification: "tops",
+        classification: "all tops new",
         name: "Top sobrepeliz",
         price: "2.107.411",
         img: TopSobrepeliz,
@@ -261,7 +261,7 @@ const dataProducts = [
     // Acessories
     {
         id: "20",
-        classification: "acessories",
+        classification: "all acessories popular",
         name: "Colares Minimalista",
         price: "2.107.411",
         img: ColaresMinimalista,
@@ -272,7 +272,7 @@ const dataProducts = [
     },
     {
         id: "21",
-        classification: "acessories",
+        classification: "all acessories popular",
         name: "Pulseiras simples",
         price: "2.107.411",
         img: PulseirasSimples,
@@ -283,7 +283,7 @@ const dataProducts = [
     },
     {
         id: "22",
-        classification: "acessories",
+        classification: "all acessories popular new",
         name: "Colar Borboleta",
         price: "2.107.411",
         img: ColarBorboleta,
@@ -294,7 +294,7 @@ const dataProducts = [
     },
     {
         id: "23",
-        classification: "acessories",
+        classification: "all acessories",
         name: "Óculos Decor Aviator",
         price: "2.107.411",
         img: SunglassesDecorAviator,
@@ -305,7 +305,7 @@ const dataProducts = [
     },
     {
         id: "24",
-        classification: "acessories",
+        classification: "all acessories new",
         name: "Oculos Perolado",
         price: "2.107.411",
         img: OculosPerolado,
@@ -316,8 +316,8 @@ const dataProducts = [
     },
     {
         id: "25",
-        classification: "acessories",
-        name: "Relógio de Quartzo",
+        classification: "all acessories",
+        name: "Relógio de Quartzo popular",
         price: "2.107.411",
         img: RelogioQuartzo,
         alt: "relógio de quartzo na cor prata",
@@ -327,7 +327,7 @@ const dataProducts = [
     },
     {
         id: "26",
-        classification: "acessories",
+        classification: "all acessories new",
         name: "Cinto ocasional",
         price: "2.107.411",
         img: CintoOcasional,
@@ -338,8 +338,8 @@ const dataProducts = [
     },
     {
         id: "27",
-        classification: "acessories",
-        name: "Pack de meias babado",
+        classification: "all acessories",
+        name: "Pack de meias babado popular",
         price: "2.107.411",
         img: PackMeiasBabado,
         alt: "pack de meias coloridas espalhadas",
@@ -352,7 +352,7 @@ const dataProducts = [
 
     {
         id: "28",
-        classification: "bottom",
+        classification: "all bottom popular new",
         name: "Calca Nasa",
         price: "2.107.411",
         img: CalcaNasaFeminina,
@@ -363,7 +363,7 @@ const dataProducts = [
     },
     {
         id: "29",
-        classification: "bottom",
+        classification: "all bottom new",
         name: "Moletom Borboleta",
         price: "2.107.411",
         img: MoletomBorboleta,
@@ -374,7 +374,7 @@ const dataProducts = [
     },
     {
         id: "30",
-        classification: "bottom",
+        classification: "all bottom popular",
         name: "Moletom California",
         price: "2.107.411",
         img: MoletomCalifornia,
@@ -385,7 +385,7 @@ const dataProducts = [
     },
     {
         id: "31",
-        classification: "bottom",
+        classification: "all bottom",
         name: "Moletom simples",
         price: "2.107.411",
         img: MoletomCordaoSimples,
@@ -396,7 +396,7 @@ const dataProducts = [
     },
     {
         id: "31",
-        classification: "bottom",
+        classification: "all bottom popula newr",
         name: "Moletom floral gráfico",
         price: "2.107.411",
         img: MoletomFloralGrafico,
@@ -407,7 +407,7 @@ const dataProducts = [
     },
     {
         id: "32",
-        classification: "bottom",
+        classification: "all bottom",
         name: "Moletom moon",
         price: "2.107.411",
         img: MoletomMoon,
@@ -418,7 +418,7 @@ const dataProducts = [
     },
     {
         id: "32",
-        classification: "bottom",
+        classification: "all bottom popular",
         name: "Moletom moon colors",
         price: "2.107.411",
         img: MoletomMoonColors,

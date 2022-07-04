@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../../GlobalContext";
+import dataSections from "../../data/dataSections";
 
 function Header() {
     const [pesquisa, setPesquisa] = React.useState("");
@@ -19,15 +20,6 @@ function Header() {
             setPesquisa("");
         }, 1000);
     }
-
-    const sections = [
-        "new",
-        "acessories",
-        "dresses",
-        "tops",
-        "bottom",
-        "collections",
-    ];
 
     return (
         <header className="header">
@@ -120,7 +112,7 @@ function Header() {
                                 popular
                             </Link>
                         </li>
-                        {sections.map((section) => (
+                        {dataSections.map((section) => (
                             <li
                                 style={{ cursor: "pointer" }}
                                 key={section}

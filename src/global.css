@@ -216,7 +216,7 @@ body {
         grid-template-areas:
             "header header"
             "home products"
-            "null products"
+            ".  products"
             "footer footer";
         gap: 9.6rem 6rem;
     }
